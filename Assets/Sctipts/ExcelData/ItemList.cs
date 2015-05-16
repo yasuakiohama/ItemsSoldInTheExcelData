@@ -10,14 +10,25 @@ namespace ExcelData {
 	/// </summary>
 	public partial class MasterData : MonoSingleton<MasterData>
 	{
+		//行データ
 		public enum ItemList : int
 		{
 			HP,
 			MP,
 			Boom,
 			fire,
-
-			MAX
+			sanda,
 		};
+
+		public List<Entity_ItemList.Param> itemList{
+			get;
+			private set;
+		}
+
+		void InitItemList()
+		{
+			itemList = new List<Entity_ItemList.Param> ();
+			itemList.AddRange ((Resources.Load (EXCEL_DATA + Path [(int)Type.ITEM_LIST]) as Entity_ItemList).param);
+		}
 	}
 }
