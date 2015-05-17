@@ -12,7 +12,7 @@ namespace ExcelData {
 
         public static readonly string[] PATH = {
             DIRECTORY + typeof(Items).Name,
-            DIRECTORY + LANGUAGEDIRECTORY + Application.systemLanguage.ToString (),
+            DIRECTORY + LANGUAGEDIRECTORY + Application.systemLanguage.ToString (), //DIRECTORY + LANGUAGEDIRECTORY + SystemLanguage.English
             DIRECTORY + typeof(ItemShop).Name,
         };
 

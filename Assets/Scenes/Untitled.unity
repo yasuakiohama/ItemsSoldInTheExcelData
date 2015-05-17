@@ -146,7 +146,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Shop1
+  m_Text: ShopButton1
 --- !u!222 &6879481
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -212,7 +212,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Shop2
+  m_Text: 'ShopButton2
 
 '
 --- !u!222 &74350472
@@ -232,9 +232,8 @@ GameObject:
   - 222: {fileID: 96033039}
   - 114: {fileID: 96033038}
   - 114: {fileID: 96033037}
-  - 114: {fileID: 96033040}
   m_Layer: 5
-  m_Name: Shop2
+  m_Name: ShopButton2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -297,12 +296,12 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 96033040}
+      - m_Target: {fileID: 1111680298}
         m_MethodName: OnButtonDown
-        m_Mode: 1
+        m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine, Version=0.0.0.0,
+          m_ObjectArgument: {fileID: 96033035}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine, Version=0.0.0.0,
             Culture=neutral, PublicKeyToken=null
           m_IntArgument: 0
           m_FloatArgument: 0
@@ -338,18 +337,6 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 96033035}
---- !u!114 &96033040
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 96033035}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 68756144be2714464b7bd6c16788e2db, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  uIShop: {fileID: 1111680298}
 --- !u!1 &512302591
 GameObject:
   m_ObjectHideFlags: 0
@@ -607,9 +594,8 @@ GameObject:
   - 222: {fileID: 1129607586}
   - 114: {fileID: 1129607585}
   - 114: {fileID: 1129607584}
-  - 114: {fileID: 1129607587}
   m_Layer: 5
-  m_Name: Shop3
+  m_Name: ShopButton3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -672,12 +658,12 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1129607587}
+      - m_Target: {fileID: 1111680298}
         m_MethodName: OnButtonDown
-        m_Mode: 1
+        m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine, Version=0.0.0.0,
+          m_ObjectArgument: {fileID: 1129607582}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine, Version=0.0.0.0,
             Culture=neutral, PublicKeyToken=null
           m_IntArgument: 0
           m_FloatArgument: 0
@@ -713,18 +699,6 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1129607582}
---- !u!114 &1129607587
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1129607582}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 68756144be2714464b7bd6c16788e2db, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  uIShop: {fileID: 1111680298}
 --- !u!1 &1263539941
 GameObject:
   m_ObjectHideFlags: 0
@@ -784,7 +758,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Shop3
+  m_Text: 'ShopButton3
 
 '
 --- !u!222 &1263539944
@@ -882,9 +856,8 @@ GameObject:
   - 222: {fileID: 1861045743}
   - 114: {fileID: 1861045742}
   - 114: {fileID: 1861045741}
-  - 114: {fileID: 1861045744}
   m_Layer: 5
-  m_Name: Shop1
+  m_Name: ShopButton1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -947,12 +920,12 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1861045744}
+      - m_Target: {fileID: 1111680298}
         m_MethodName: OnButtonDown
-        m_Mode: 1
+        m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine, Version=0.0.0.0,
+          m_ObjectArgument: {fileID: 1861045739}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine, Version=0.0.0.0,
             Culture=neutral, PublicKeyToken=null
           m_IntArgument: 0
           m_FloatArgument: 0
@@ -988,18 +961,6 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1861045739}
---- !u!114 &1861045744
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1861045739}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 68756144be2714464b7bd6c16788e2db, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  uIShop: {fileID: 1111680298}
 --- !u!1 &2087311405
 GameObject:
   m_ObjectHideFlags: 0
