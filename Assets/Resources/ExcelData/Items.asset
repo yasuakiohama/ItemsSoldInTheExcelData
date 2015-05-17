@@ -13,65 +13,65 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   param:
   - ID: 1
-    key: hpPortion
+    key: ITEM_HP_PORTION
     price: 100
     maxHaveNum: 10
-    type: ITEM_TYPE_HEAL
+    type: TEXT_ITEM_TYPE_HEAL
     effect: 50
-    message: ITEM_HP_PORTION
+    message: TEXT_ITEM_HP_PORTION
   - ID: 2
-    key: mpPortion
+    key: ITEM_MP_PORTION
     price: 200
     maxHaveNum: 5
-    type: ITEM_TYPE_HEAL
+    type: TEXT_ITEM_TYPE_HEAL
     effect: 50
-    message: ITEM_MP_PORTION
+    message: TEXT_ITEM_MP_PORTION
   - ID: 3
-    key: bomb
+    key: ITEM_BOMB
     price: 400
     maxHaveNum: 10
-    type: ITEM_TYPE_DAMAGE
+    type: TEXT_ITEM_TYPE_DAMAGE
     effect: 100
-    message: ITEM_BOMB
+    message: TEXT_ITEM_BOMB
   - ID: 4
-    key: fire
+    key: ITEM_FIRE
     price: 30
     maxHaveNum: 5
-    type: ITEM_TYPE_DAMAGE
+    type: TEXT_ITEM_TYPE_DAMAGE
     effect: 110
-    message: ITEM_FIRE
+    message: TEXT_ITEM_FIRE
   - ID: 5
-    key: thunder
+    key: ITEM_THUNDER
     price: 40
     maxHaveNum: 5
-    type: ITEM_TYPE_DAMAGE
+    type: TEXT_ITEM_TYPE_DAMAGE
     effect: 130
-    message: ITEM_THUNDER
+    message: TEXT_ITEM_THUNDER
   - ID: 6
-    key: Burizado
+    key: ITEM_BURIZADO
     price: 60
     maxHaveNum: 5
-    type: ITEM_TYPE_DAMAGE
+    type: TEXT_ITEM_TYPE_DAMAGE
     effect: 400
-    message: ITEM_BURIZADO
+    message: TEXT_ITEM_BURIZADO
   - ID: 7
-    key: quake
+    key: ITEM_QUAKE
     price: 80
     maxHaveNum: 5
-    type: ITEM_TYPE_DAMAGE
+    type: TEXT_ITEM_TYPE_DAMAGE
     effect: 130
-    message: ITEM_QUAKE
+    message: TEXT_ITEM_QUAKE
   - ID: 8
-    key: drain
+    key: ITEM_DRAIN
     price: 100
     maxHaveNum: 5
-    type: ITEM_TYPE_DAMAGE
+    type: TEXT_ITEM_TYPE_DAMAGE
     effect: 10
-    message: ITEM_DRAIN
+    message: TEXT_ITEM_DRAIN
   - ID: 9
-    key: Meteor
+    key: ITEM_METEOR
     price: 1000
     maxHaveNum: 1
-    type: ITEM_TYPE_DAMAGE
+    type: TEXT_ITEM_TYPE_DAMAGE
     effect: 1000
-    message: ITEM_METEOR
+    message: TEXT_ITEM_METEOR

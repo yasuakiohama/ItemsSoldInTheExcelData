@@ -14,20 +14,20 @@ namespace Data
             param.AddRange ((Resources.Load (MasterData.PATH [(int)MasterData.Type.LANGUAGE]) as Entity_Language).param);
         }
 
-        public enum Row : int
+        public enum Key
         {
-            ITEM_HP_PORTION,
-            ITEM_MP_PORTION,
-            ITEM_BOMB,
-            ITEM_FIRE,
-            ITEM_THUNDER,
-            ITEM_BURIZADO,
-            ITEM_QUAKE,
-            ITEM_DRAIN,
-            ITEM_METEOR,
-            ITEM_TYPE_DAMAGE,
-            ITEM_TYPE_HEAL,
-            ITEM_NANE,
+            TEXT_ITEM_HP_PORTION,
+            TEXT_ITEM_MP_PORTION,
+            TEXT_ITEM_BOMB,
+            TEXT_ITEM_FIRE,
+            TEXT_ITEM_THUNDER,
+            TEXT_ITEM_BURIZADO,
+            TEXT_ITEM_QUAKE,
+            TEXT_ITEM_DRAIN,
+            TEXT_ITEM_METEOR,
+            TEXT_ITEM_TYPE_DAMAGE,
+            TEXT_ITEM_TYPE_HEAL,
+            TEXT_ITEM_NANE,
         }
 
         private List<Entity_Language.Param> param = null;

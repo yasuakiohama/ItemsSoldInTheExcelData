@@ -12,33 +12,33 @@ namespace Data
     /// </summary>
     public class Items
     {
-        public enum Row : int
+        public Items()
         {
-            hpPortion,
-            mpPortion,
-            bomb,
-            fire,
-            thunder,
-            Burizado,
-            quake,
-            drain,
-            Meteor,
+            param = new List<Entity_Items.Param> ();
+            param.AddRange ((Resources.Load (MasterData.PATH [(int)MasterData.Type.ITEMS]) as Entity_Items).param);
         }
 
-        private List<Entity_Items.Param> m_param = null;
-        public List<Entity_Items.Param> param
+        public enum Row : int
         {
-            get
-            {
-                if( m_param != null )
-                {
-                    return m_param;
-                }
+            ITEM_HP_PORTION,
+            ITEM_MP_PORTION,
+            ITEM_BOMB,
+            ITEM_FIRE,
+            ITEM_THUNDER,
+            ITEM_BURIZADO,
+            ITEM_QUAKE,
+            ITEM_DRAIN,
+            ITEM_METEOR,
+        }
 
-                m_param = new List<Entity_Items.Param> ();
-                m_param.AddRange ((Resources.Load (MasterData.PATH [(int)MasterData.Type.ITEMS]) as Entity_Items).param);
-                return m_param;
-            }
+        public List<Entity_Items.Param> param {
+            get;
+            private set;
+        }
+
+        public Entity_Items.Param GetRowByKey(string key)
+        {
+            return param.Where (s => s.key == key).ToArray () [0];
         }
     }
 }

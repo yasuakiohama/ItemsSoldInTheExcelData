@@ -13,14 +13,14 @@ namespace Data {
         public static readonly string[] PATH = {
             DIRECTORY + typeof(Items).Name,
             DIRECTORY + LANGUAGEDIRECTORY + Application.systemLanguage.ToString (),
-            DIRECTORY + "Item_Shop",
+            DIRECTORY + typeof(ItemShop).Name,
         };
 
         public enum Type : int
         {
             ITEMS,
             LANGUAGE,
-            ITEM_SHOP,
+            ITEMSHOP,
 
             //
             MAX
@@ -28,5 +28,11 @@ namespace Data {
 
         public static Items items = new Items ();
         public static Language language = new Language ();
+        public static ItemShop itemShop = new ItemShop ();
+
+        public static string Replace(int ID)
+        {
+            return "$" + ID.ToString () + "$";
+        }
     }
 }

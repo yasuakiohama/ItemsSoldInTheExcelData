@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 using System.IO;
 using UnityEditor;
@@ -6,10 +6,10 @@ using System.Xml.Serialization;
 using NPOI.HSSF.UserModel;
 using NPOI.SS.UserModel;
 
-public class $ExportTemplate$ : AssetPostprocessor {
-	private static readonly string filePath = "$IMPORT_PATH$";
-	private static readonly string exportPath = "$EXPORT_PATH$";
-	private static readonly string[] sheetNames = { $SheetList$ };
+public class ItemShop_importer : AssetPostprocessor {
+	private static readonly string filePath = "Assets/Resources/ExcelData/ItemShop.xls";
+	private static readonly string exportPath = "Assets/Resources/ExcelData/ItemShop.asset";
+	private static readonly string[] sheetNames = { "Shop1","Shop2","Shop3", };
 	
 	static void OnPostprocessAllAssets (string[] importedAssets, string[] deletedAssets, string[] movedAssets, string[] movedFromAssetPaths)
 	{
@@ -17,9 +17,9 @@ public class $ExportTemplate$ : AssetPostprocessor {
 			if (!filePath.Equals (asset))
 				continue;
 				
-			$ExcelData$ data = ($ExcelData$)AssetDatabase.LoadAssetAtPath (exportPath, typeof($ExcelData$));
+			Entity_ItemShop data = (Entity_ItemShop)AssetDatabase.LoadAssetAtPath (exportPath, typeof(Entity_ItemShop));
 			if (data == null) {
-				data = ScriptableObject.CreateInstance<$ExcelData$> ();
+				data = ScriptableObject.CreateInstance<Entity_ItemShop> ();
 				AssetDatabase.CreateAsset ((ScriptableObject)data, exportPath);
 				data.hideFlags = HideFlags.NotEditable;
 			}
@@ -35,15 +35,17 @@ public class $ExportTemplate$ : AssetPostprocessor {
 						continue;
 					}
 
-					$ExcelData$.Sheet s = new $ExcelData$.Sheet ();
+					Entity_ItemShop.Sheet s = new Entity_ItemShop.Sheet ();
 					s.name = sheetName;
 				
 					for (int i=1; i<= sheet.LastRowNum; i++) {
 						IRow row = sheet.GetRow (i);
 						ICell cell = null;
 						
-						$ExcelData$.Param p = new $ExcelData$.Param ();
-						$EXPORT_DATA$
+						Entity_ItemShop.Param p = new Entity_ItemShop.Param ();
+						
+					cell = row.GetCell(0); p.ID = (cell == null ? 0.0 : cell.NumericCellValue);
+					cell = row.GetCell(1); p.key = (cell == null ? "" : cell.StringCellValue);
 						s.list.Add (p);
 					}
 					data.sheets.Add(s);

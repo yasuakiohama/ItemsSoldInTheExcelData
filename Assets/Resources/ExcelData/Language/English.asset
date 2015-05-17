@@ -13,62 +13,62 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   param:
   - ID: 1
-    key: ITEM_HP_PORTION
+    key: TEXT_ITEM_HP_PORTION
     message:
     - HP portion
-    - HP#1##2#
+    - HP$0$$1$
   - ID: 2
-    key: ITEM_MP_PORTION
+    key: TEXT_ITEM_MP_PORTION
     message:
     - MP portion
-    - MP#1##2#
+    - MP$0$$1$
   - ID: 3
-    key: ITEM_BOMB
+    key: TEXT_ITEM_BOMB
     message:
     - bome
-    - HP#1##2#
+    - HP$0$$1$
   - ID: 4
-    key: ITEM_FIRE
+    key: TEXT_ITEM_FIRE
     message:
     - fire
-    - HP#1##2#
+    - HP$0$$1$
   - ID: 5
-    key: ITEM_THUNDER
+    key: TEXT_ITEM_THUNDER
     message:
     - thunder
-    - HP#1##2#
+    - HP$0$$1$
   - ID: 6
-    key: ITEM_BURIZADO
+    key: TEXT_ITEM_BURIZADO
     message:
     - butizado
-    - HP#1##2#
+    - HP$0$$1$
   - ID: 7
-    key: ITEM_QUAKE
+    key: TEXT_ITEM_QUAKE
     message:
     - quake
-    - HP#1##2#
+    - HP$0$$1$
   - ID: 8
-    key: ITEM_DRAIN
+    key: TEXT_ITEM_DRAIN
     message:
     - drain
-    - HP#1##2#
+    - HP$0$$1$
   - ID: 9
-    key: ITEM_METEOR
+    key: TEXT_ITEM_METEOR
     message:
     - meteor
-    - HP#1##2#
+    - HP$0$$1$
   - ID: 10
-    key: ITEM_TYPE_DAMAGE
+    key: TEXT_ITEM_TYPE_DAMAGE
     message:
     - damage
     - 
   - ID: 11
-    key: ITEM_TYPE_HEAL
+    key: TEXT_ITEM_TYPE_HEAL
     message:
     - HEAL
     - 
   - ID: 12
-    key: ITEM_NANE
+    key: TEXT_ITEM_NANE
     message:
     - name
     - effect
