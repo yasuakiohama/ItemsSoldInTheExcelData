@@ -1,0 +1,74 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 8
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33d189f879f5546c49de8c7e32698856, type: 3}
+  m_Name: English
+  m_EditorClassIdentifier: 
+  param:
+  - ID: 1
+    key: ITEM_HP_PORTION
+    message:
+    - HP portion
+    - HP#1##2#
+  - ID: 2
+    key: ITEM_MP_PORTION
+    message:
+    - MP portion
+    - MP#1##2#
+  - ID: 3
+    key: ITEM_BOMB
+    message:
+    - bome
+    - HP#1##2#
+  - ID: 4
+    key: ITEM_FIRE
+    message:
+    - fire
+    - HP#1##2#
+  - ID: 5
+    key: ITEM_THUNDER
+    message:
+    - thunder
+    - HP#1##2#
+  - ID: 6
+    key: ITEM_BURIZADO
+    message:
+    - butizado
+    - HP#1##2#
+  - ID: 7
+    key: ITEM_QUAKE
+    message:
+    - quake
+    - HP#1##2#
+  - ID: 8
+    key: ITEM_DRAIN
+    message:
+    - drain
+    - HP#1##2#
+  - ID: 9
+    key: ITEM_METEOR
+    message:
+    - meteor
+    - HP#1##2#
+  - ID: 10
+    key: ITEM_TYPE_DAMAGE
+    message:
+    - damage
+    - 
+  - ID: 11
+    key: ITEM_TYPE_HEAL
+    message:
+    - HEAL
+    - 
+  - ID: 12
+    key: ITEM_NANE
+    message:
+    - name
+    - effect

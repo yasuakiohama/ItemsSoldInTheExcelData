@@ -6,10 +6,10 @@ using System.Xml.Serialization;
 using NPOI.HSSF.UserModel;
 using NPOI.SS.UserModel;
 
-public class ItemList_importer : AssetPostprocessor
+public class Language_importer : AssetPostprocessor
 {
-    private static readonly string filePath = "Assets/Resources/ExcelData/ItemList.xls";
-    private static readonly string[] sheetNames = { "Item", };
+    private static readonly string filePath = "Assets/Resources/ExcelData/Language/Language.xls";
+    private static readonly string[] sheetNames = { "Japanese","English", };
     
     static void OnPostprocessAllAssets(string[] importedAssets, string[] deletedAssets, string[] movedAssets, string[] movedFromAssetPaths)
     {
@@ -24,13 +24,13 @@ public class ItemList_importer : AssetPostprocessor
 
                 foreach (string sheetName in sheetNames)
                 {
-                    var exportPath = "Assets/Resources/ExcelData/" + sheetName + ".asset";
+                    var exportPath = "Assets/Resources/ExcelData/Language/" + sheetName + ".asset";
                     
                     // check scriptable object
-                    var data = (Entity_ItemList)AssetDatabase.LoadAssetAtPath(exportPath, typeof(Entity_ItemList));
+                    var data = (Entity_Language)AssetDatabase.LoadAssetAtPath(exportPath, typeof(Entity_Language));
                     if (data == null)
                     {
-                        data = ScriptableObject.CreateInstance<Entity_ItemList>();
+                        data = ScriptableObject.CreateInstance<Entity_Language>();
                         AssetDatabase.CreateAsset((ScriptableObject)data, exportPath);
                         data.hideFlags = HideFlags.NotEditable;
                     }
@@ -50,13 +50,13 @@ public class ItemList_importer : AssetPostprocessor
                         IRow row = sheet.GetRow(i);
                         ICell cell = null;
                         
-                        var p = new Entity_ItemList.Param();
+                        var p = new Entity_Language.Param();
 			
 					cell = row.GetCell(0); p.ID = (cell == null ? 0.0 : cell.NumericCellValue);
-					cell = row.GetCell(1); p.name = (cell == null ? "" : cell.StringCellValue);
-					cell = row.GetCell(2); p.text = (cell == null ? "" : cell.StringCellValue);
-					cell = row.GetCell(3); p.price = (cell == null ? 0.0 : cell.NumericCellValue);
-					cell = row.GetCell(4); p.maxHaveNum = (cell == null ? 0.0 : cell.NumericCellValue);
+					cell = row.GetCell(1); p.key = (cell == null ? "" : cell.StringCellValue);
+					p.message = new string[2];
+					cell = row.GetCell(2); p.message[0] = (cell == null ? "" : cell.StringCellValue);
+					cell = row.GetCell(3); p.message[1] = (cell == null ? "" : cell.StringCellValue);
 
                         data.param.Add(p);
                     }

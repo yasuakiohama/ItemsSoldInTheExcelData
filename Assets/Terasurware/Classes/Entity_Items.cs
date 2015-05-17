@@ -2,7 +2,7 @@ using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 
-public class Entity_ItemList : ScriptableObject
+public class Entity_Items : ScriptableObject
 {	
 	public List<Param> param = new List<Param> ();
 
@@ -11,9 +11,11 @@ public class Entity_ItemList : ScriptableObject
 	{
 		
 		public double ID;
-		public string name;
-		public string text;
+		public string key;
 		public double price;
 		public double maxHaveNum;
+		public string type;
+		public double effect;
+		public string message;
 	}
 }
