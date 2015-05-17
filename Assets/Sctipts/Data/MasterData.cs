@@ -12,7 +12,7 @@ namespace Data {
 
         public static readonly string[] PATH = {
             DIRECTORY + typeof(Items).Name,
-            DIRECTORY + LANGUAGEDIRECTORY + SystemLanguage.English,//Application.systemLanguage.ToString (),
+            DIRECTORY + LANGUAGEDIRECTORY + Application.systemLanguage.ToString (),
             DIRECTORY + "Item_Shop",
         };
 

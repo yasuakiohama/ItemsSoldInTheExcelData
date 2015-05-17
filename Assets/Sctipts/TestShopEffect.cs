@@ -12,7 +12,7 @@ public class TestShopEffect : MonoBehaviour
     void Start ()
     {
         string text = "";
-        string effect = MasterData.language.GetRowByKey (Language.Row.ITEM_NANE.ToString()).message [1];
+        string effect = MasterData.language.GetRowByKey (Language.Row.ITEM_NANE.ToString ()).message [1];
 
         foreach (var param in MasterData.items.param.Select( (value, index) => new { value, index } )) {
             string effectName = MasterData.language.GetRowByKey (param.value.message).message [1];

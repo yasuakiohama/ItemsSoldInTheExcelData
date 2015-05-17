@@ -16,7 +16,7 @@ public class TestShopName : MonoBehaviour
 
         foreach (var param in MasterData.items.param.Select( (value, index) => new { value, index } )) {
             string itemName = MasterData.language.GetRowByKey (param.value.message).message [0];
-            text += name + ":" + itemName + "\n";
+            text += "ID:" + param.index.ToString () + " " + name + ":" + itemName + "\n";
         }
         GetComponent<Text> ().text = text;
     }
