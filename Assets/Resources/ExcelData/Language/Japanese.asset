@@ -1,0 +1,74 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 8
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33d189f879f5546c49de8c7e32698856, type: 3}
+  m_Name: Japanese
+  m_EditorClassIdentifier: 
+  param:
+  - ID: 1
+    key: TEXT_ITEM_HP_PORTION
+    message:
+    - "HP\u30DD\u30FC\u30B7\u30E7\u30F3"
+    - "HP\u3092$0$$1$"
+  - ID: 2
+    key: TEXT_ITEM_MP_PORTION
+    message:
+    - "MP\u30DD\u30FC\u30B7\u30E7\u30F3"
+    - "MP\u3092$0$$1$"
+  - ID: 3
+    key: TEXT_ITEM_BOMB
+    message:
+    - "\u7206\u5F3E"
+    - "HP\u306B$0$$1$"
+  - ID: 4
+    key: TEXT_ITEM_FIRE
+    message:
+    - "\u30D5\u30A1\u30A4\u30A2\u306E\u9B54\u6CD5"
+    - "HP\u306B$0$$1$"
+  - ID: 5
+    key: TEXT_ITEM_THUNDER
+    message:
+    - "\u30B5\u30F3\u30C0\u30FC\u306E\u9B54\u6CD5"
+    - "HP\u306B$0$$1$"
+  - ID: 6
+    key: TEXT_ITEM_BURIZADO
+    message:
+    - "\u30D6\u30EA\u30B6\u30C9\u306E\u9B54\u6CD5"
+    - "HP\u306B$0$$1$"
+  - ID: 7
+    key: TEXT_ITEM_QUAKE
+    message:
+    - "\u30AF\u30A8\u30A4\u30AF\u306E\u9B54\u6CD5"
+    - "HP\u306B$0$$1$"
+  - ID: 8
+    key: TEXT_ITEM_DRAIN
+    message:
+    - "\u30C9\u30EC\u30A4\u30F3\u306E\u9B54\u6CD5"
+    - "HP\u306B$0$$1$"
+  - ID: 9
+    key: TEXT_ITEM_METEOR
+    message:
+    - "\u30E1\u30C6\u30AA\u306E\u9B54\u6CD5"
+    - "HP\u306B$0$$1$"
+  - ID: 10
+    key: TEXT_ITEM_TYPE_DAMAGE
+    message:
+    - "\u30C0\u30E1\u30FC\u30B8"
+    - 
+  - ID: 11
+    key: TEXT_ITEM_TYPE_HEAL
+    message:
+    - "\u56DE\u5FA9"
+    - 
+  - ID: 12
+    key: TEXT_ITEM_NANE
+    message:
+    - "\u540D\u524D"
+    - "\u52B9\u679C"

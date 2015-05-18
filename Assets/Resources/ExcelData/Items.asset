@@ -1,0 +1,77 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 8
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45a50da8ea7664d5c8ac97b903f0b3c6, type: 3}
+  m_Name: Items
+  m_EditorClassIdentifier: 
+  param:
+  - ID: 1
+    key: ITEM_HP_PORTION
+    price: 100
+    maxHaveNum: 10
+    type: TEXT_ITEM_TYPE_HEAL
+    effect: 50
+    message: TEXT_ITEM_HP_PORTION
+  - ID: 2
+    key: ITEM_MP_PORTION
+    price: 200
+    maxHaveNum: 5
+    type: TEXT_ITEM_TYPE_HEAL
+    effect: 50
+    message: TEXT_ITEM_MP_PORTION
+  - ID: 3
+    key: ITEM_BOMB
+    price: 400
+    maxHaveNum: 10
+    type: TEXT_ITEM_TYPE_DAMAGE
+    effect: 100
+    message: TEXT_ITEM_BOMB
+  - ID: 4
+    key: ITEM_FIRE
+    price: 30
+    maxHaveNum: 5
+    type: TEXT_ITEM_TYPE_DAMAGE
+    effect: 110
+    message: TEXT_ITEM_FIRE
+  - ID: 5
+    key: ITEM_THUNDER
+    price: 40
+    maxHaveNum: 5
+    type: TEXT_ITEM_TYPE_DAMAGE
+    effect: 130
+    message: TEXT_ITEM_THUNDER
+  - ID: 6
+    key: ITEM_BURIZADO
+    price: 60
+    maxHaveNum: 5
+    type: TEXT_ITEM_TYPE_DAMAGE
+    effect: 400
+    message: TEXT_ITEM_BURIZADO
+  - ID: 7
+    key: ITEM_QUAKE
+    price: 80
+    maxHaveNum: 5
+    type: TEXT_ITEM_TYPE_DAMAGE
+    effect: 130
+    message: TEXT_ITEM_QUAKE
+  - ID: 8
+    key: ITEM_DRAIN
+    price: 100
+    maxHaveNum: 5
+    type: TEXT_ITEM_TYPE_DAMAGE
+    effect: 10
+    message: TEXT_ITEM_DRAIN
+  - ID: 9
+    key: ITEM_METEOR
+    price: 1000
+    maxHaveNum: 1
+    type: TEXT_ITEM_TYPE_DAMAGE
+    effect: 1000
+    message: TEXT_ITEM_METEOR
