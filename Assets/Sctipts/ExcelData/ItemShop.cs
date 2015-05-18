@@ -27,6 +27,9 @@ namespace ExcelData
         /// <value>The sheets.</value>
         private static List<Entity_ItemShop.Sheet> _sheets;
 
+        /// <summary>
+        /// ゲームが始まってから最初に呼ばれるまで初期化しない
+        /// </summary>
         private static void Init()
         {
             _sheets = new List<Entity_ItemShop.Sheet> ();

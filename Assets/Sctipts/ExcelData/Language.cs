@@ -30,8 +30,7 @@ namespace ExcelData
         private static List<Entity_Language.Param> _param = null;
 
         /// <summary>
-        /// 初回呼び出し時に一度言語を選択する。
-        /// 以後ずっとそのまま
+        /// ゲームが始まってから最初に呼ばれるまで初期化しない
         /// </summary>
         private static void Init()
         {

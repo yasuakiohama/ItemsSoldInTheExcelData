@@ -36,6 +36,10 @@ namespace ExcelData
             MAX
         };
 
+        /// <summary>
+        /// 任意の文字列をテキストに埋め込むための処理
+        /// </summary>
+        /// <param name="ID">I.</param>
         public static string Replace(int ID)
         {
             return "$" + ID.ToString () + "$";
