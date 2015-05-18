@@ -49,7 +49,7 @@ namespace ExcelData
         /// <param name="key">Key.</param>
         public Entity_Items.Param GetRowByKey(string key)
         {
-            return param.Where (s => s.key == key).ToArray () [0];
+            return param.Find (s => s.key.Equals (key));
         }
     }
 }

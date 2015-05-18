@@ -43,7 +43,7 @@ namespace ExcelData
         /// <param name="sheetName">Sheet name.</param>
         public List<Entity_ItemShop.Param> GetParamsByName(string sheetName)
         {
-            return sheets.Where (s => s.name == sheetName).ToArray () [0].list;
+            return sheets.Find (s => s.name.Equals (sheetName)).list;
         }
     }
 }
