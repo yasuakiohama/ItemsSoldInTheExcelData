@@ -25,6 +25,9 @@ namespace ExcelData
             ITEM_QUAKE,
             ITEM_DRAIN,
             ITEM_METEOR,
+
+            //この上に変数を追加
+            MAX,
         }
 
         /// <summary>
@@ -50,6 +53,24 @@ namespace ExcelData
                 Init ();
             }
             return _param.Find (s => s.key.Equals (key));
+        }
+
+        /// <summary>
+        /// キーデータを利用して行データを習得
+        /// </summary>
+        /// <returns>The row by key.</returns>
+        /// <param name="key">Key.</param>
+        public static Entity_Items.Param GetRowById(int id)
+        {
+            if (_param == null) {
+                Init ();
+            }
+
+            if (id < 0 || id >= (int)Row.MAX) {
+                return null;
+            }
+
+            return _param [id];
         }
     }
 }
