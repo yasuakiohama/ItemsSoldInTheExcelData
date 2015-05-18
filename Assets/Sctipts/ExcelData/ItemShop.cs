@@ -10,14 +10,8 @@ namespace ExcelData
     /// Itemsのエクセルデータ設定用クラス
     /// シートをsepalateしない
     /// </summary>
-    public class ItemShop
+    public static class ItemShop
     {
-        public ItemShop()
-        {
-            sheets = new List<Entity_ItemShop.Sheet> ();
-            sheets.AddRange ((Resources.Load (MasterData.PATH [(int)MasterData.Key.ITEMSHOP]) as Entity_ItemShop).sheets);
-        }
-
         //シートの名前
         //GetParamsByNameに利用
         public enum SheetName
@@ -31,9 +25,12 @@ namespace ExcelData
         /// シートの配列を習得する
         /// </summary>
         /// <value>The sheets.</value>
-        public List<Entity_ItemShop.Sheet> sheets {
-            get;
-            private set;
+        private static List<Entity_ItemShop.Sheet> _sheets;
+
+        private static void Init()
+        {
+            _sheets = new List<Entity_ItemShop.Sheet> ();
+            _sheets.AddRange ((Resources.Load (Option.PATH [(int)Option.Key.ITEMSHOP]) as Entity_ItemShop).sheets);
         }
 
         /// <summary>
@@ -41,9 +38,12 @@ namespace ExcelData
         /// </summary>
         /// <returns>The parameters by name.</returns>
         /// <param name="sheetName">Sheet name.</param>
-        public List<Entity_ItemShop.Param> GetParamsByName(string sheetName)
+        public static List<Entity_ItemShop.Param> GetParamsByName(string sheetName)
         {
-            return sheets.Find (s => s.name.Equals (sheetName)).list;
+            if (_sheets == null) {
+                Init ();
+            }
+            return _sheets.Find (s => s.name.Equals (sheetName)).list;
         }
     }
 }
