@@ -10,14 +10,8 @@ namespace ExcelData
     /// Itemsのエクセルデータ設定用クラス
     /// シートをsepalateしている
     /// </summary>
-    public class Items
+    public static class Items
     {
-        public Items()
-        {
-            param = new List<Entity_Items.Param> ();
-            param.AddRange ((Resources.Load (MasterData.PATH [(int)MasterData.Key.ITEMS]) as Entity_Items).param);
-        }
-
         //行データ
         //直接配列番号に入れて使用する
         public enum Row
@@ -37,9 +31,12 @@ namespace ExcelData
         /// paramを習得する
         /// </summary>
         /// <value>The parameter.</value>
-        public List<Entity_Items.Param> param {
-            get;
-            private set;
+        private static List<Entity_Items.Param> _param;
+
+        private static void Init()
+        {
+            _param = new List<Entity_Items.Param> ();
+            _param.AddRange ((Resources.Load (Option.PATH [(int)Option.Key.ITEMS]) as Entity_Items).param);
         }
 
         /// <summary>
@@ -47,9 +44,12 @@ namespace ExcelData
         /// </summary>
         /// <returns>The row by key.</returns>
         /// <param name="key">Key.</param>
-        public Entity_Items.Param GetRowByKey(string key)
+        public static Entity_Items.Param GetRowByKey(string key)
         {
-            return param.Find (s => s.key.Equals (key));
+            if (_param == null) {
+                Init ();
+            }
+            return _param.Find (s => s.key.Equals (key));
         }
     }
 }
