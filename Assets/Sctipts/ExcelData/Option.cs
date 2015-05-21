@@ -40,9 +40,14 @@ namespace ExcelData
         /// 任意の文字列をテキストに埋め込むための処理
         /// </summary>
         /// <param name="ID">I.</param>
-        public static string Replace(int ID)
+        public static string Replace(int Id)
         {
-            return "$" + ID.ToString () + "$";
+            return "$" + Id.ToString () + "$";
+        }
+
+        public static string Replace(string oldValue, int Id,  string newValue)
+        {
+            return oldValue.Replace (Replace (Id), newValue);
         }
     }
 }

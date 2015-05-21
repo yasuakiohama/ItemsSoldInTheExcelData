@@ -12,13 +12,13 @@ public class ItemEffect : MonoBehaviour
     public void Init (string ShopKey)
     {
         string text = "";
-        string effect = Language.GetRowByKey (Language.Key.TEXT_ITEM_NANE.ToString ()).message [1];
+        string effect = Language.GetRowByKey (Language.Key.TEXT_ITEM_NANE).message [1];
 
-        foreach (Entity_ItemShop.Param param in ItemShop.GetParamsByName(ShopKey)) {
-            Entity_Items.Param item = Items.GetRowByKey (param.key);
+        foreach (var param in ItemShop.GetParamsByName(ShopKey)) {
+            var item = Items.GetRowByKey (param.key);
             string effectName = Language.GetRowByKey (item.message).message [1];
-            effectName = effectName.Replace (Option.Replace (0), item.effect.ToString ());
-            effectName = effectName.Replace (Option.Replace (1), Language.GetRowByKey (item.type).message [0]);
+            effectName = Option.Replace (effectName, 0, item.effect.ToString ());
+            effectName = Option.Replace (effectName, 1, Language.GetRowByKey (item.type).message [0]);
             text += effect + ":" + effectName + "\n";
         }
         GetComponent<Text> ().text = text;

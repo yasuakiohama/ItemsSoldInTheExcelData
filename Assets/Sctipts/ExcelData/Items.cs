@@ -36,6 +36,9 @@ namespace ExcelData
         /// <value>The parameter.</value>
         private static List<Entity_Items.Param> _param;
 
+        /// <summary>
+        /// ゲームが始まってから最初に呼ばれるまで初期化しない
+        /// </summary>
         private static void Init()
         {
             _param = new List<Entity_Items.Param> ();

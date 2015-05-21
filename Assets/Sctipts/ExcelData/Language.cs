@@ -69,6 +69,19 @@ namespace ExcelData
         }
 
         /// <summary>
+        /// 行データを呼び出す
+        /// </summary>
+        /// <returns>The row by key.</returns>
+        /// <param name="key">Key.</param>
+        public static Entity_Language.Param GetRowByKey(Key key)
+        {
+            if (_param == null) {
+                Init ();
+            }
+            return _param.Find (s => s.key.Equals (Enum.GetName (typeof(Key), key)));
+        }
+
+        /// <summary>
         /// デバック用に言語を変換する処理
         /// </summary>
         /// <param name="systemLanguage">System language.</param>
