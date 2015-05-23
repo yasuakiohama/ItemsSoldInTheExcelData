@@ -166,6 +166,30 @@ Prefab:
       propertyPath: m_Pivot.y
       value: .5
       objectReference: {fileID: 0}
+    - target: {fileID: 11406568, guid: 57e5ca9fe40b84006abfec2024974f41, type: 2}
+      propertyPath: m_Colors.m_HighlightedColor.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11418838, guid: 57e5ca9fe40b84006abfec2024974f41, type: 2}
+      propertyPath: m_Colors.m_HighlightedColor.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11412570, guid: 57e5ca9fe40b84006abfec2024974f41, type: 2}
+      propertyPath: m_Colors.m_HighlightedColor.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11493096, guid: 57e5ca9fe40b84006abfec2024974f41, type: 2}
+      propertyPath: m_Colors.m_HighlightedColor.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11485490, guid: 57e5ca9fe40b84006abfec2024974f41, type: 2}
+      propertyPath: m_Colors.m_HighlightedColor.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11461850, guid: 57e5ca9fe40b84006abfec2024974f41, type: 2}
+      propertyPath: m_Colors.m_HighlightedColor.r
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 57e5ca9fe40b84006abfec2024974f41, type: 2}
   m_IsPrefabParent: 0
