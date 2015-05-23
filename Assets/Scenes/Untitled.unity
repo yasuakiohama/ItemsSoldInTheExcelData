@@ -87,7 +87,7 @@ NavMeshSettings:
     cellSize: .166666672
     manualCellSize: 0
   m_NavMeshData: {fileID: 0}
---- !u!1001 &203731249
+--- !u!1001 &636969335
 Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -165,10 +165,6 @@ Prefab:
     - target: {fileID: 22495300, guid: 57e5ca9fe40b84006abfec2024974f41, type: 2}
       propertyPath: m_Pivot.y
       value: .5
-      objectReference: {fileID: 0}
-    - target: {fileID: 112184, guid: 57e5ca9fe40b84006abfec2024974f41, type: 2}
-      propertyPath: m_Name
-      value: ChangeLanguage
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 57e5ca9fe40b84006abfec2024974f41, type: 2}
@@ -267,7 +263,7 @@ RectTransform:
 RectTransform:
   m_PrefabParentObject: {fileID: 22495300, guid: 57e5ca9fe40b84006abfec2024974f41,
     type: 2}
-  m_PrefabInternal: {fileID: 203731249}
+  m_PrefabInternal: {fileID: 636969335}
 --- !u!1 &2087311405
 GameObject:
   m_ObjectHideFlags: 0

@@ -68,19 +68,14 @@ namespace Manager.Excel
             }
         }
 
-        public static Entity_Language.Param GetRowById(int id)
+        public static string GetMessageById(int id)
         {
             try {
-                return map [id];
+                return map [id].message;
             } catch (KeyNotFoundException e) {
                 Debug.LogError ("Entity_Item Error ID:" + id + "\n" + e.Message);
-                return new Entity_Language.Param ();
+                return null;
             }
-        }
-
-        public static Entity_Language.Param[] ToArray()
-        {
-            return map.Values.ToArray ();
         }
 
         /// <summary>

@@ -20,7 +20,7 @@ MonoBehaviour:
     name: 1000001
   - ID: 4000002
     key: ITEM_HP_PORTION_H
-    price: 100
+    price: 200
     type: 2000001
     effect: 100
     name: 1000002
@@ -34,7 +34,7 @@ MonoBehaviour:
     key: ITEM_MP_PORTION_H
     price: 200
     type: 2000002
-    effect: 50
+    effect: 100
     name: 1000004
   - ID: 4000101
     key: ITEM_BOMB
@@ -46,7 +46,7 @@ MonoBehaviour:
     key: ITEM_BOMB_H
     price: 400
     type: 2000003
-    effect: 100
+    effect: 1000
     name: 1000006
   - ID: 4000201
     key: ITEM_FIRE

@@ -61,7 +61,7 @@ namespace Manager.Excel
                 return map [id];
             } catch (KeyNotFoundException e) {
                 Debug.LogError ("Entity_Item Error ID:" + id + "\n" + e.Message);
-                return new Entity_Item.Param ();
+                return null;
             }
         }
 
