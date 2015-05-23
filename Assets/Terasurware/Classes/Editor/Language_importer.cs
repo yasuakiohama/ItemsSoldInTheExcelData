@@ -52,11 +52,9 @@ public class Language_importer : AssetPostprocessor
                         
                         var p = new Entity_Language.Param();
 			
-					cell = row.GetCell(0); p.ID = (cell == null ? 0.0 : cell.NumericCellValue);
+					cell = row.GetCell(0); p.ID = (int)(cell == null ? 0 : cell.NumericCellValue);
 					cell = row.GetCell(1); p.key = (cell == null ? "" : cell.StringCellValue);
-					p.message = new string[2];
-					cell = row.GetCell(2); p.message[0] = (cell == null ? "" : cell.StringCellValue);
-					cell = row.GetCell(3); p.message[1] = (cell == null ? "" : cell.StringCellValue);
+					cell = row.GetCell(2); p.message = (cell == null ? "" : cell.StringCellValue);
 
                         data.param.Add(p);
                     }

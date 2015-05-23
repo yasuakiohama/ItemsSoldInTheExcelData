@@ -1,0 +1,86 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 8
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 58ce02c81ed9d4e6c85129a4d546d357, type: 3}
+  m_Name: Item
+  m_EditorClassIdentifier: 
+  param:
+  - ID: 4000001
+    key: ITEM_HP_PORTION
+    price: 100
+    type: 2000001
+    effect: 50
+    name: 1000001
+  - ID: 4000002
+    key: ITEM_HP_PORTION_H
+    price: 100
+    type: 2000001
+    effect: 100
+    name: 1000002
+  - ID: 4000003
+    key: ITEM_MP_PORTION
+    price: 200
+    type: 2000002
+    effect: 50
+    name: 1000003
+  - ID: 4000004
+    key: ITEM_MP_PORTION_H
+    price: 200
+    type: 2000002
+    effect: 50
+    name: 1000004
+  - ID: 4000101
+    key: ITEM_BOMB
+    price: 400
+    type: 2000003
+    effect: 100
+    name: 1000005
+  - ID: 4000102
+    key: ITEM_BOMB_H
+    price: 400
+    type: 2000003
+    effect: 100
+    name: 1000006
+  - ID: 4000201
+    key: ITEM_FIRE
+    price: 30
+    type: 2000003
+    effect: 110
+    name: 1000007
+  - ID: 4000202
+    key: ITEM_THUNDER
+    price: 40
+    type: 2000003
+    effect: 130
+    name: 1000008
+  - ID: 4000203
+    key: ITEM_BURIZADO
+    price: 60
+    type: 2000003
+    effect: 400
+    name: 1000009
+  - ID: 4000204
+    key: ITEM_QUAKE
+    price: 80
+    type: 2000003
+    effect: 130
+    name: 1000010
+  - ID: 4000205
+    key: ITEM_DRAIN
+    price: 100
+    type: 2000003
+    effect: 10
+    name: 1000011
+  - ID: 4000206
+    key: ITEM_METEOR
+    price: 1000
+    type: 2000003
+    effect: 1000
+    name: 1000012

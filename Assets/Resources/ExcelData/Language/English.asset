@@ -12,63 +12,60 @@ MonoBehaviour:
   m_Name: English
   m_EditorClassIdentifier: 
   param:
-  - ID: 1
+  - ID: 1000001
     key: TEXT_ITEM_HP_PORTION
-    message:
-    - HP portion
-    - HP$0$$1$
-  - ID: 2
+    message: HP portion
+  - ID: 1000002
+    key: TEXT_ITEM_HP_PORTION_H
+    message: HP portion_H
+  - ID: 1000003
     key: TEXT_ITEM_MP_PORTION
-    message:
-    - MP portion
-    - MP$0$$1$
-  - ID: 3
+    message: MP portion
+  - ID: 1000004
+    key: TEXT_ITEM_MP_PORTION_H
+    message: MP portion_H
+  - ID: 1000005
     key: TEXT_ITEM_BOMB
-    message:
-    - bome
-    - HP$0$$1$
-  - ID: 4
+    message: bome
+  - ID: 1000006
+    key: TEXT_ITEM_BOMB_H
+    message: bome_H
+  - ID: 1000007
     key: TEXT_ITEM_FIRE
-    message:
-    - fire
-    - HP$0$$1$
-  - ID: 5
+    message: fire
+  - ID: 1000008
     key: TEXT_ITEM_THUNDER
-    message:
-    - thunder
-    - HP$0$$1$
-  - ID: 6
+    message: thunder
+  - ID: 1000009
     key: TEXT_ITEM_BURIZADO
-    message:
-    - butizado
-    - HP$0$$1$
-  - ID: 7
+    message: butizado
+  - ID: 1000010
     key: TEXT_ITEM_QUAKE
-    message:
-    - quake
-    - HP$0$$1$
-  - ID: 8
-    key: TEXT_ITEM_DRAIN
-    message:
-    - drain
-    - HP$0$$1$
-  - ID: 9
+    message: quake
+  - ID: 1000011
+    key: 'TEXT_ITEM_DRAIN '
+    message: drain
+  - ID: 1000012
     key: TEXT_ITEM_METEOR
-    message:
-    - meteor
-    - HP$0$$1$
-  - ID: 10
+    message: meteor
+  - ID: 3000001
     key: TEXT_ITEM_TYPE_DAMAGE
-    message:
-    - damage
-    - 
-  - ID: 11
+    message: damage
+  - ID: 3000002
     key: TEXT_ITEM_TYPE_HEAL
-    message:
-    - HEAL
-    - 
-  - ID: 12
+    message: heal
+  - ID: 3000003
     key: TEXT_ITEM_NANE
-    message:
-    - name
-    - effect
+    message: name
+  - ID: 3000004
+    key: TEXT_ITEM_EFFECT
+    message: effect
+  - ID: 2000001
+    key: TEXT_ITEM_EXPLANE_TYPE1
+    message: HP heal  $0$
+  - ID: 2000002
+    key: TEXT_ITEM_EXPLANE_TYPE2
+    message: MP heal  $0$
+  - ID: 2000003
+    key: TEXT_ITEM_EXPLANE_TYPE3
+    message: HP damage $0$

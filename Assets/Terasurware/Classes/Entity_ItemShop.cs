@@ -17,8 +17,8 @@ public class Entity_ItemShop : ScriptableObject
 	public class Param
 	{
 		
-		public double ID;
-		public string key;
+		public int ID;
+		public int itemId;
 	}
 }
 

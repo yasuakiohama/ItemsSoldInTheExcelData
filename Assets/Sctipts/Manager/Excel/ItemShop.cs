@@ -4,7 +4,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace ExcelData
+namespace Manager.Excel
 {
     /// <summary>
     /// Itemsのエクセルデータ設定用クラス

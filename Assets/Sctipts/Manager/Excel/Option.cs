@@ -4,7 +4,8 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace ExcelData
+
+namespace Manager.Excel
 {
     /// <summary>
     /// エクセルデータを利用したOption
@@ -20,7 +21,7 @@ namespace ExcelData
         /// 例:(Resources.Load (MasterData.PATH [(int)MasterData.Key.ITEMS]) as Entity_Items
         /// </summary>
         public static readonly string[] PATH = {
-            ExcelData_DIRECTORY + typeof(Items).Name,
+            ExcelData_DIRECTORY + typeof(Item).Name,
             ExcelData_DIRECTORY + LANGUAGE_DIRECTORY,
             ExcelData_DIRECTORY + typeof(ItemShop).Name,
         };
@@ -28,7 +29,7 @@ namespace ExcelData
         //リソールを呼び出すキー
         public enum Key : int
         {
-            ITEMS,
+            ITEM,
             LANGUAGE,
             ITEMSHOP,
 

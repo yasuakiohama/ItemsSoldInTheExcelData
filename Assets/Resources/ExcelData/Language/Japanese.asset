@@ -12,63 +12,60 @@ MonoBehaviour:
   m_Name: Japanese
   m_EditorClassIdentifier: 
   param:
-  - ID: 1
+  - ID: 1000001
     key: TEXT_ITEM_HP_PORTION
-    message:
-    - "HP\u30DD\u30FC\u30B7\u30E7\u30F3"
-    - "HP\u3092$0$$1$"
-  - ID: 2
+    message: "HP\u30DD\u30FC\u30B7\u30E7\u30F3"
+  - ID: 1000002
+    key: TEXT_ITEM_HP_PORTION_H
+    message: "HP\u30DD\u30FC\u30B7\u30E7\u30F3_H"
+  - ID: 1000003
     key: TEXT_ITEM_MP_PORTION
-    message:
-    - "MP\u30DD\u30FC\u30B7\u30E7\u30F3"
-    - "MP\u3092$0$$1$"
-  - ID: 3
+    message: "MP\u30DD\u30FC\u30B7\u30E7\u30F3"
+  - ID: 1000004
+    key: TEXT_ITEM_MP_PORTION_H
+    message: "MP\u30DD\u30FC\u30B7\u30E7\u30F3_H"
+  - ID: 1000005
     key: TEXT_ITEM_BOMB
-    message:
-    - "\u7206\u5F3E"
-    - "HP\u306B$0$$1$"
-  - ID: 4
+    message: "\u7206\u5F3E"
+  - ID: 1000006
+    key: TEXT_ITEM_BOMB_H
+    message: "\u7206\u5F3E_H"
+  - ID: 1000007
     key: TEXT_ITEM_FIRE
-    message:
-    - "\u30D5\u30A1\u30A4\u30A2\u306E\u9B54\u6CD5"
-    - "HP\u306B$0$$1$"
-  - ID: 5
+    message: "\u30D5\u30A1\u30A4\u30A2\u306E\u9B54\u6CD5"
+  - ID: 1000008
     key: TEXT_ITEM_THUNDER
-    message:
-    - "\u30B5\u30F3\u30C0\u30FC\u306E\u9B54\u6CD5"
-    - "HP\u306B$0$$1$"
-  - ID: 6
+    message: "\u30B5\u30F3\u30C0\u30FC\u306E\u9B54\u6CD5"
+  - ID: 1000009
     key: TEXT_ITEM_BURIZADO
-    message:
-    - "\u30D6\u30EA\u30B6\u30C9\u306E\u9B54\u6CD5"
-    - "HP\u306B$0$$1$"
-  - ID: 7
+    message: "\u30D6\u30EA\u30B6\u30C9\u306E\u9B54\u6CD5"
+  - ID: 1000010
     key: TEXT_ITEM_QUAKE
-    message:
-    - "\u30AF\u30A8\u30A4\u30AF\u306E\u9B54\u6CD5"
-    - "HP\u306B$0$$1$"
-  - ID: 8
-    key: TEXT_ITEM_DRAIN
-    message:
-    - "\u30C9\u30EC\u30A4\u30F3\u306E\u9B54\u6CD5"
-    - "HP\u306B$0$$1$"
-  - ID: 9
+    message: "\u30AF\u30A8\u30A4\u30AF\u306E\u9B54\u6CD5"
+  - ID: 1000011
+    key: 'TEXT_ITEM_DRAIN '
+    message: "\u30C9\u30EC\u30A4\u30F3\u306E\u9B54\u6CD5"
+  - ID: 1000012
     key: TEXT_ITEM_METEOR
-    message:
-    - "\u30E1\u30C6\u30AA\u306E\u9B54\u6CD5"
-    - "HP\u306B$0$$1$"
-  - ID: 10
+    message: "\u30E1\u30C6\u30AA\u306E\u9B54\u6CD5"
+  - ID: 3000001
     key: TEXT_ITEM_TYPE_DAMAGE
-    message:
-    - "\u30C0\u30E1\u30FC\u30B8"
-    - 
-  - ID: 11
+    message: "\u30C0\u30E1\u30FC\u30B8"
+  - ID: 3000002
     key: TEXT_ITEM_TYPE_HEAL
-    message:
-    - "\u56DE\u5FA9"
-    - 
-  - ID: 12
+    message: "\u56DE\u5FA9"
+  - ID: 3000003
     key: TEXT_ITEM_NANE
-    message:
-    - "\u540D\u524D"
-    - "\u52B9\u679C"
+    message: "\u540D\u524D"
+  - ID: 3000004
+    key: TEXT_ITEM_EFFECT
+    message: "\u52B9\u679C"
+  - ID: 2000001
+    key: TEXT_ITEM_EXPLANE_TYPE1
+    message: "HP\u3092$0$\u56DE\u5FA9"
+  - ID: 2000002
+    key: TEXT_ITEM_EXPLANE_TYPE2
+    message: "MP\u3092$0$\u56DE\u5FA9"
+  - ID: 2000003
+    key: TEXT_ITEM_EXPLANE_TYPE3
+    message: "HP\u306B$0$\u30C0\u30E1\u30FC\u30B8"

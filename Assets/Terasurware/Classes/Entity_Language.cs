@@ -10,8 +10,8 @@ public class Entity_Language : ScriptableObject
 	public class Param
 	{
 		
-		public double ID;
+		public int ID;
 		public string key;
-		public string[] message;
+		public string message;
 	}
 }

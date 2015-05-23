@@ -15,24 +15,30 @@ MonoBehaviour:
   - name: Shop1
     list:
     - ID: 1
-      key: ITEM_HP_PORTION
+      itemId: 4000001
     - ID: 2
-      key: ITEM_MP_PORTION
+      itemId: 4000002
+    - ID: 3
+      itemId: 4000003
+    - ID: 4
+      itemId: 4000004
   - name: Shop2
     list:
     - ID: 1
-      key: ITEM_BOMB
+      itemId: 4000101
+    - ID: 1
+      itemId: 4000102
   - name: Shop3
     list:
     - ID: 1
-      key: ITEM_FIRE
+      itemId: 4000201
     - ID: 2
-      key: ITEM_THUNDER
+      itemId: 4000202
     - ID: 3
-      key: ITEM_BURIZADO
+      itemId: 4000203
     - ID: 4
-      key: ITEM_QUAKE
+      itemId: 4000204
     - ID: 5
-      key: ITEM_DRAIN
+      itemId: 4000205
     - ID: 6
-      key: ITEM_METEOR
+      itemId: 4000206

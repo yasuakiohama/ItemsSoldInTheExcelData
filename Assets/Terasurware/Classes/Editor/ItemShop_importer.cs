@@ -44,8 +44,8 @@ public class ItemShop_importer : AssetPostprocessor {
 						
 						Entity_ItemShop.Param p = new Entity_ItemShop.Param ();
 						
-					cell = row.GetCell(0); p.ID = (cell == null ? 0.0 : cell.NumericCellValue);
-					cell = row.GetCell(1); p.key = (cell == null ? "" : cell.StringCellValue);
+					cell = row.GetCell(0); p.ID = (int)(cell == null ? 0 : cell.NumericCellValue);
+					cell = row.GetCell(1); p.itemId = (int)(cell == null ? 0 : cell.NumericCellValue);
 						s.list.Add (p);
 					}
 					data.sheets.Add(s);

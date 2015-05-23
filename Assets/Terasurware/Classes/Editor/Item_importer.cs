@@ -6,10 +6,10 @@ using System.Xml.Serialization;
 using NPOI.HSSF.UserModel;
 using NPOI.SS.UserModel;
 
-public class Items_importer : AssetPostprocessor
+public class Item_importer : AssetPostprocessor
 {
-    private static readonly string filePath = "Assets/Resources/ExcelData/Items.xls";
-    private static readonly string[] sheetNames = { "Items", };
+    private static readonly string filePath = "Assets/Resources/ExcelData/Item.xls";
+    private static readonly string[] sheetNames = { "Item", };
     
     static void OnPostprocessAllAssets(string[] importedAssets, string[] deletedAssets, string[] movedAssets, string[] movedFromAssetPaths)
     {
@@ -27,10 +27,10 @@ public class Items_importer : AssetPostprocessor
                     var exportPath = "Assets/Resources/ExcelData/" + sheetName + ".asset";
                     
                     // check scriptable object
-                    var data = (Entity_Items)AssetDatabase.LoadAssetAtPath(exportPath, typeof(Entity_Items));
+                    var data = (Entity_Item)AssetDatabase.LoadAssetAtPath(exportPath, typeof(Entity_Item));
                     if (data == null)
                     {
-                        data = ScriptableObject.CreateInstance<Entity_Items>();
+                        data = ScriptableObject.CreateInstance<Entity_Item>();
                         AssetDatabase.CreateAsset((ScriptableObject)data, exportPath);
                         data.hideFlags = HideFlags.NotEditable;
                     }
@@ -50,15 +50,14 @@ public class Items_importer : AssetPostprocessor
                         IRow row = sheet.GetRow(i);
                         ICell cell = null;
                         
-                        var p = new Entity_Items.Param();
+                        var p = new Entity_Item.Param();
 			
-					cell = row.GetCell(0); p.ID = (cell == null ? 0.0 : cell.NumericCellValue);
+					cell = row.GetCell(0); p.ID = (int)(cell == null ? 0 : cell.NumericCellValue);
 					cell = row.GetCell(1); p.key = (cell == null ? "" : cell.StringCellValue);
-					cell = row.GetCell(2); p.price = (cell == null ? 0.0 : cell.NumericCellValue);
-					cell = row.GetCell(3); p.maxHaveNum = (cell == null ? 0.0 : cell.NumericCellValue);
-					cell = row.GetCell(4); p.type = (cell == null ? "" : cell.StringCellValue);
-					cell = row.GetCell(5); p.effect = (cell == null ? 0.0 : cell.NumericCellValue);
-					cell = row.GetCell(6); p.message = (cell == null ? "" : cell.StringCellValue);
+					cell = row.GetCell(2); p.price = (int)(cell == null ? 0 : cell.NumericCellValue);
+					cell = row.GetCell(3); p.type = (int)(cell == null ? 0 : cell.NumericCellValue);
+					cell = row.GetCell(4); p.effect = (int)(cell == null ? 0 : cell.NumericCellValue);
+					cell = row.GetCell(5); p.name = (int)(cell == null ? 0 : cell.NumericCellValue);
 
                         data.param.Add(p);
                     }
