@@ -30,16 +30,16 @@ public class UIShop : MonoBehaviour
             ButtonName buttonName = (ButtonName)Enum.Parse (typeof(ButtonName), buttonGameObject.name);
             switch (buttonName) {
             case ButtonName.ShopButton1:
-                itemName.Init (ItemShop.SheetName.Shop1.ToString ());
-                itemEffect.Init (ItemShop.SheetName.Shop1.ToString ());
+                itemName.Init ((int)ItemShop.ID.Shop1);
+                itemEffect.Init ((int)ItemShop.ID.Shop1);
                 break;
             case ButtonName.ShopButton2:
-                itemName.Init (ItemShop.SheetName.Shop2.ToString ());
-                itemEffect.Init (ItemShop.SheetName.Shop2.ToString ());
+                itemName.Init ((int)ItemShop.ID.Shop2);
+                itemEffect.Init ((int)ItemShop.ID.Shop2);
                 break;
             case ButtonName.ShopButton3:
-                itemName.Init (ItemShop.SheetName.Shop3.ToString ());
-                itemEffect.Init (ItemShop.SheetName.Shop3.ToString ());
+                itemName.Init ((int)ItemShop.ID.Shop3);
+                itemEffect.Init ((int)ItemShop.ID.Shop3);
                 break;
             case ButtonName.ChangeLanguage:
                 if (changeFlage) {

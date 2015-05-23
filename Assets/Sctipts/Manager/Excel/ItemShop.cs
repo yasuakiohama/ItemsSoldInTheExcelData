@@ -7,46 +7,34 @@ using System.Linq;
 namespace Manager.Excel
 {
     /// <summary>
-    /// Itemsのエクセルデータ設定用クラス
-    /// シートをsepalateしない
+    /// Itemのエクセルデータ設定用クラス
+    /// シートをsepalateしている
     /// </summary>
     public static class ItemShop
     {
-        //シートの名前
-        //GetParamsByNameに利用
-        public enum SheetName
+        //行データ
+        //直接配列番号に入れて使用する
+        public enum ID : int
         {
-            Shop1,
+            Shop1 = 500001,
             Shop2,
             Shop3,
         }
 
-        /// <summary>
-        /// シートの配列を習得する
-        /// </summary>
-        /// <value>The sheets.</value>
-        private static List<Entity_ItemShop.Sheet> _sheets;
-
-        /// <summary>
-        /// ゲームが始まってから最初に呼ばれるまで初期化しない
-        /// </summary>
-        private static void Init()
-        {
-            _sheets = new List<Entity_ItemShop.Sheet> ();
-            _sheets.AddRange ((Resources.Load (Option.PATH [(int)Option.Key.ITEMSHOP]) as Entity_ItemShop).sheets);
+        private static List<Entity_ItemShop.Param> m_list = null;
+        private static List<Entity_ItemShop.Param> list {
+            get {
+                if (m_list == null) {
+                    m_list = new List<Entity_ItemShop.Param> ();
+                    m_list.AddRange ((Resources.Load (Option.PATH [(int)Option.Key.ITEMSHOP]) as Entity_ItemShop).param);
+                }
+                return m_list;
+            }
         }
 
-        /// <summary>
-        /// paramのリストを習得する
-        /// </summary>
-        /// <returns>The parameters by name.</returns>
-        /// <param name="sheetName">Sheet name.</param>
-        public static List<Entity_ItemShop.Param> GetParamsByName(string sheetName)
+        public static List<Entity_ItemShop.Param> GetRowsById(int id)
         {
-            if (_sheets == null) {
-                Init ();
-            }
-            return _sheets.Find (s => s.name.Equals (sheetName)).list;
+            return list.Where (s => s.shopId == id).ToList ();
         }
     }
 }

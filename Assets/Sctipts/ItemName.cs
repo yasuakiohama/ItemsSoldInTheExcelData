@@ -9,14 +9,14 @@ using Manager.Excel;
 
 public class ItemName : MonoBehaviour
 {
-    public void Init (string shopKey)
+    public void Init (int shopKey)
     {
         string text = "";
-        string name = Language.GetRowByKey ((int)Language.ID.TEXT_ITEM_NANE).message;
+        string name = Language.GetRowById ((int)Language.ID.TEXT_ITEM_NANE).message;
 
-        foreach (var param in ItemShop.GetParamsByName(shopKey)) {
+        foreach (var param in ItemShop.GetRowsById(shopKey)) {
             var item = Item.GetRowById (param.itemId);
-            string itemName = Language.GetRowByKey (item.name).message;
+            string itemName = Language.GetRowById (item.name).message;
             text += OneLineText (item.ID.ToString (), name, itemName);
         }
         GetComponent<Text> ().text = text;

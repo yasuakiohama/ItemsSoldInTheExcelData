@@ -11,34 +11,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dff456799ed8445668b98cbd182ed737, type: 3}
   m_Name: ItemShop
   m_EditorClassIdentifier: 
-  sheets:
-  - name: Shop1
-    list:
-    - ID: 1
-      itemId: 4000001
-    - ID: 2
-      itemId: 4000002
-    - ID: 3
-      itemId: 4000003
-    - ID: 4
-      itemId: 4000004
-  - name: Shop2
-    list:
-    - ID: 1
-      itemId: 4000101
-    - ID: 1
-      itemId: 4000102
-  - name: Shop3
-    list:
-    - ID: 1
-      itemId: 4000201
-    - ID: 2
-      itemId: 4000202
-    - ID: 3
-      itemId: 4000203
-    - ID: 4
-      itemId: 4000204
-    - ID: 5
-      itemId: 4000205
-    - ID: 6
-      itemId: 4000206
+  param:
+  - shopId: 500001
+    itemId: 4000001
+  - shopId: 500001
+    itemId: 4000002
+  - shopId: 500001
+    itemId: 4000003
+  - shopId: 500001
+    itemId: 4000004
+  - shopId: 500002
+    itemId: 4000101
+  - shopId: 500002
+    itemId: 4000102
+  - shopId: 500003
+    itemId: 4000201
+  - shopId: 500003
+    itemId: 4000202
+  - shopId: 500003
+    itemId: 4000203
+  - shopId: 500003
+    itemId: 4000204
+  - shopId: 500003
+    itemId: 4000205
+  - shopId: 500003
+    itemId: 4000206
